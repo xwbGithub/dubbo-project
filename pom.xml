@@ -8,13 +8,7 @@
     <artifactId>dubbo-project</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>boot-order-service-consumer</module>
-        <module>boot-user-service-provider</module>
-        <module>order-service-consumer</module>
-        <module>user-service-provider</module>
-        <module>gmall-interface</module>
-    </modules>
+
     <dependencies>
         <dependency>
             <groupId>commons-logging</groupId>
@@ -141,7 +135,12 @@
             <version>3.4.8</version>
             <type>pom</type>
         </dependency>
-
-
     </dependencies>
+    <modules>
+        <module>boot-order-service-consumer</module>
+        <module>boot-user-service-provider</module>
+        <module>order-service-consumer</module>
+        <module>user-service-provider</module>
+        <module>gmall-interface</module>
+    </modules>
 </project>

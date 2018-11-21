@@ -9,13 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.atguigu.gmall</groupId>
+    <version>0.0.1-SNAPSHOT</version>
     <artifactId>order-service-consumer</artifactId>
     <dependencies>
-       <!-- <dependency>
+        <dependency>
             <groupId>com.atguigu.gmall</groupId>
             <artifactId>gmall-interface</artifactId>
-            <version>1.0.0</version>
-        </dependency>-->
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!-- 引入dubbo -->
         <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
         <dependency>
