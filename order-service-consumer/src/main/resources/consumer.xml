@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:cotext="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 扫描在ioc容器中的bean -->
+    <cotext:component-scan base-package="com.atguigu.gmail.service.impl"/>
+    <dubbo:application name="order-service-consumer"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+    <!-- 声明需要调用远程服务的接口，生成远程服务代理 -->
+    <!-- 此处的接口会从服务中心zookeeper中调用 -->
+    <dubbo:reference interface="com.atguigu.gmall.service.UserService" id="userService"/>
+    <!-- 监控中心 -->
+    <!--  1、（监控中心第一种）以下监控中心的意思是去注册中心找当前应用 -->
+    <dubbo:monitor protocol="registry"/>
+    <!-- 2、（监控中心第二种）以下配置是,直接指定监控中心的地址去找【直连】 -->
+    <!--<dubbo:monitor address="127.0.0.1:7070"/>-->
+
+</beans>

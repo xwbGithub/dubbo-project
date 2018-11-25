@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
+		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!-- 1、指定当前服务名称 -->
+    <dubbo:application name="user-service-provider"/>
+    <!-- 2、指定注册中心服务地址 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
+    <!-- 第二步也可以使用以下注册方式 -->
+    <!--<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"></dubbo:registry>-->
+    <!--3、指定通信协议(通信协议？通信端口) -->
+    <dubbo:protocol name="dubbo" port="20800"/>
+    <!--暴露服务-->
+    <!--   注意是interface(不是实现类) ref是具体的实现类,因为暴露的是接口,但是需要指明该接口的实现类是哪个 -->
+    <dubbo:service interface="com.atguigu.gmall.service.UserService" ref="userService"/>
+    <!-- 服务实现类 -->
+    <bean id="userService" class="com.atguigu.gmall.service.impl.UserServiceImpl"/>
+    <!--  连接监控中心 -->
+    <dubbo:monitor protocol="registry"/>
+</beans>
