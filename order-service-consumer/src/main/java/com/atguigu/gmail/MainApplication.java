@@ -12,9 +12,9 @@ public class MainApplication {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("consumer.xml");
         OrderService bean = ctx.getBean(OrderService.class);
-
+        ctx.start();
+        System.out.println("消费者启动中...");
         List<UserAddress> userAddressList = bean.initOrder("1");
         System.out.println(userAddressList);
-//        ctx.start();
     }
 }

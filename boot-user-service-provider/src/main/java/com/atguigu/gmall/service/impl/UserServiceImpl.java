@@ -9,7 +9,7 @@ import com.atguigu.gmall.bean.UserAddress;
 import com.atguigu.gmall.service.UserService;
 
 
-@Service//暴露服务 
+@Service//暴露服务
 @Component
 public class UserServiceImpl implements UserService {
 
