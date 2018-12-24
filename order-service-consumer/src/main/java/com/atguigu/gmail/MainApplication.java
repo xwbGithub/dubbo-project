@@ -16,5 +16,6 @@ public class MainApplication {
         System.out.println("消费者启动中...");
         List<UserAddress> userAddressList = bean.initOrder("1");
         System.out.println(userAddressList);
+        System.out.println("消费者调用结束...");
     }
 }

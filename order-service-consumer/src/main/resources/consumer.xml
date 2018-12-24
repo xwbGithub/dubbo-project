@@ -15,7 +15,7 @@
     <dubbo:reference interface="com.atguigu.gmall.service.UserService" id="userService"/>
     <!-- 监控中心 -->
     <!--  1、（监控中心第一种）以下监控中心的意思是去注册中心找当前应用 -->
-    <dubbo:monitor protocol="registry"/>
+    <!--<dubbo:monitor protocol="registry"/>-->
     <!-- 2、（监控中心第二种）以下配置是,直接指定监控中心的地址去找【直连】 -->
     <!--<dubbo:monitor address="127.0.0.1:7070"/>-->
 

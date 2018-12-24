@@ -16,16 +16,51 @@
     </properties>
 
     <dependencies>
+        <!--  log4j start -->
         <dependency>
-            <groupId>org.apache.curator</groupId>
-            <artifactId>curator-framework</artifactId>
-            <version>2.12.0</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- log4j end -->
+        <!--  netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.30.Final</version>
+        </dependency>
+        <!-- dubbo -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
             <version>2.6.5</version>
         </dependency>
+        <!--  zookeeper注册中心 -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+        <!--  因为导入的dubbo是2.6.5,,所以此处需要导入对应版本的zk -->
+        <!--dubbo-2.6.2之前使用以下zk -->
+        <!--
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.11</version>
+        </dependency>
+        -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -57,7 +92,7 @@
             <artifactId>jetty</artifactId>
             <version>6.1.25</version>
         </dependency>
-         <dependency>
+        <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-util</artifactId>
             <version>9.4.12.RC0</version>
@@ -102,15 +137,6 @@
             <artifactId>spring-web</artifactId>
             <version>4.3.10.RELEASE</version>
         </dependency>
-        <!--  因为导入的dubbo是2.6.2,,所以此处需要导入对应版本的zk -->
-        <!--dubbo-2.6.2之前使用以下zk -->
-        <!--
-        <dependency>
-            <groupId>com.101tec</groupId>
-            <artifactId>zkclient</artifactId>
-            <version>0.11</version>
-        </dependency>
-        -->
     </dependencies>
     <build>
         <resources>

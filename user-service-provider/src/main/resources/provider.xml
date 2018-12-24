@@ -6,7 +6,10 @@
 		http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!-- 1、指定当前服务名称 -->
-    <dubbo:application name="user-service-provider"/>
+    <dubbo:application name="user-service-provider">
+        <!-- telnet端口与dubbo协议的端口是不同的端口，默认为22222-->
+        <dubbo:parameter key="qos.port" value="33333"/>
+    </dubbo:application>
     <!-- 2、指定注册中心服务地址 -->
     <dubbo:registry address="zookeeper://10.238.63.230:2181"></dubbo:registry>
     <!-- 第二步也可以使用以下注册方式 -->
