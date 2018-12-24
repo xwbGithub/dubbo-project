@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.io.IOException;
 import java.util.List;
 
-public class MainApplication {
+public class ConsumerMainApplication {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("consumer.xml");
         OrderService bean = ctx.getBean(OrderService.class);
