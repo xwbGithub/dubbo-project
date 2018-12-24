@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>user-service-provider</artifactId>
+    <packaging>war</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -17,7 +18,7 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.atguigu.gmall</groupId>
+            <groupId>com.atguigu.gmail</groupId>
             <artifactId>gmall-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>

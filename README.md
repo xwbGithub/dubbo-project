@@ -1,8 +1,8 @@
 # dubbo-project
-dubbo 项目开发。<br>
+dubbo 项目开发.
 
-spring普通方式集成dubbo<br>
-order-service-consumer(服务消费者)<br>
+spring普通方式集成dubbo:<br>
+order-service-consumer(服务消费者):<br>
 user-service-provider(服务提供者)<br>
 
 
@@ -19,7 +19,9 @@ Dependencies<br>
 | -------- | ----- | ----------- | ---------- |
 | `0.2.0`  | 1.8+ | `2.0.x` | `2.6.2` + |
 | `0.1.1`  | 1.7+ | `1.5.x` | `2.6.2` + |
+
 dubbo和zookeeper的版本匹配关系
+
 ```xml
  <!-- dubbo依赖 -->
         <dependency>

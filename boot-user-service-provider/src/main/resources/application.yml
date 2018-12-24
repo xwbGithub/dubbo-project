@@ -1,3 +1,4 @@
+
 dubbo:
   application:
     name: user-service-provider #服务名
@@ -9,3 +10,5 @@ dubbo:
     port: 20880 #协议端口号
   monitor:
     protocol: registry #监控中心
+server:
+  port: 8081

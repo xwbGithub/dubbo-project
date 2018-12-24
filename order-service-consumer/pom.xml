@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.atguigu.gmall</groupId>
     <artifactId>order-service-consumer</artifactId>
-
+    <packaging>war</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -20,12 +19,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.atguigu.gmall</groupId>
+            <groupId>com.atguigu.gmail</groupId>
             <artifactId>gmall-interface</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!-- 引入dubbo -->
-        <!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
