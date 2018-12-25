@@ -1,4 +1,4 @@
-package com.atguigu.gmall.bean;
+package com.atguigu.gmail.bean;
 
 import java.io.Serializable;
 

@@ -2,13 +2,11 @@ package com.atguigu.gmail.service.impl;
 
 import java.util.List;
 
+import com.atguigu.gmail.bean.UserAddress;
+import com.atguigu.gmail.service.OrderService;
+import com.atguigu.gmail.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.atguigu.gmall.bean.UserAddress;
-import com.atguigu.gmall.service.OrderService;
-import com.atguigu.gmall.service.UserService;
-
 /**
  * 1、将服务提供者注册到注册中心（暴露服务）
  * 		1）、导入dubbo依赖（2.6.2）\操作zookeeper的客户端(curator)
@@ -33,7 +31,4 @@ public class OrderServiceImpl implements OrderService {
 		}
 		return addressList;
 	}
-	
-	
-
 }

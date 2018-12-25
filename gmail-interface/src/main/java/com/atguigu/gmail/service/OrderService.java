@@ -1,8 +1,8 @@
-package com.atguigu.gmall.service;
+package com.atguigu.gmail.service;
 
 import java.util.List;
 
-import com.atguigu.gmall.bean.UserAddress;
+import com.atguigu.gmail.bean.UserAddress;
 
 public interface OrderService {
 	

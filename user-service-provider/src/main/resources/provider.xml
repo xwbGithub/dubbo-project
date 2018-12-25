@@ -18,9 +18,9 @@
     <dubbo:protocol name="dubbo" port="20880"/>
     <!--暴露服务-->
     <!--   注意是interface(不是实现类) ref是具体的实现类,因为暴露的是接口,但是需要指明该接口的实现类是哪个 -->
-    <dubbo:service interface="com.atguigu.gmall.service.UserService" ref="userService"/>
+    <dubbo:service interface="com.atguigu.gmail.service.UserService" ref="userService"/>
     <!-- 服务实现类 -->
-    <bean id="userService" class="com.atguigu.gmall.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="com.atguigu.gmail.service.impl.UserServiceImpl"/>
     <!--  连接监控中心 -->
     <dubbo:monitor protocol="registry"/>
 </beans>

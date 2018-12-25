@@ -1,4 +1,4 @@
-package com.atguigu.gmall;
+package com.atguigu.gmail;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

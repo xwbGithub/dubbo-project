@@ -1,11 +1,9 @@
 package com.atguigu.gmail;
 
-import com.atguigu.gmall.bean.UserAddress;
-import com.atguigu.gmall.service.OrderService;
-import com.atguigu.gmall.service.UserService;
+import com.atguigu.gmail.bean.UserAddress;
+import com.atguigu.gmail.service.OrderService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.io.IOException;
 import java.util.List;
 
 public class ConsumerMainApplication {

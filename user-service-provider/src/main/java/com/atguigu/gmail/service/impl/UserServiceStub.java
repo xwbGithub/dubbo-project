@@ -1,11 +1,10 @@
-package com.atguigu.gmall.service.impl;
+package com.atguigu.gmail.service.impl;
 
 import java.util.List;
 
+import com.atguigu.gmail.bean.UserAddress;
+import com.atguigu.gmail.service.UserService;
 import org.springframework.util.StringUtils;
-
-import com.atguigu.gmall.bean.UserAddress;
-import com.atguigu.gmall.service.UserService;
 
 public class UserServiceStub implements UserService {
 
