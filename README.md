@@ -45,3 +45,6 @@ dubbo和zookeeper的版本匹配关系
         </dependency>
         -->
 ```
+更多dubbo配置请看
+
+[SpringBoot-dubbo以及配置信息](https://github.com/xwbGithub/springBoot-dubbo)
